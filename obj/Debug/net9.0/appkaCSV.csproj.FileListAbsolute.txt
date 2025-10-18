@@ -1,0 +1,14 @@
+C:\Škola\VCP\appkaCSV\bin\Debug\net9.0\appkaCSV.exe
+C:\Škola\VCP\appkaCSV\bin\Debug\net9.0\appkaCSV.deps.json
+C:\Škola\VCP\appkaCSV\bin\Debug\net9.0\appkaCSV.runtimeconfig.json
+C:\Škola\VCP\appkaCSV\bin\Debug\net9.0\appkaCSV.dll
+C:\Škola\VCP\appkaCSV\bin\Debug\net9.0\appkaCSV.pdb
+C:\Škola\VCP\appkaCSV\obj\Debug\net9.0\appkaCSV.GeneratedMSBuildEditorConfig.editorconfig
+C:\Škola\VCP\appkaCSV\obj\Debug\net9.0\appkaCSV.AssemblyInfoInputs.cache
+C:\Škola\VCP\appkaCSV\obj\Debug\net9.0\appkaCSV.AssemblyInfo.cs
+C:\Škola\VCP\appkaCSV\obj\Debug\net9.0\appkaCSV.csproj.CoreCompileInputs.cache
+C:\Škola\VCP\appkaCSV\obj\Debug\net9.0\appkaCSV.dll
+C:\Škola\VCP\appkaCSV\obj\Debug\net9.0\refint\appkaCSV.dll
+C:\Škola\VCP\appkaCSV\obj\Debug\net9.0\appkaCSV.pdb
+C:\Škola\VCP\appkaCSV\obj\Debug\net9.0\appkaCSV.genruntimeconfig.cache
+C:\Škola\VCP\appkaCSV\obj\Debug\net9.0\ref\appkaCSV.dll
