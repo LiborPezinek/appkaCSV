@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("appkaCSV")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ad85de90a6c7b1b86b6ebaafad7cd07eb4b9f31")]
 [assembly: System.Reflection.AssemblyProductAttribute("appkaCSV")]
 [assembly: System.Reflection.AssemblyTitleAttribute("appkaCSV")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

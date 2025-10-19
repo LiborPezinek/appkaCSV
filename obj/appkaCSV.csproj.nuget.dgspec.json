@@ -1,29 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Škola\\VCP\\appkaCSV\\appkaCSV.csproj": {}
+    "C:\\Škola\\VCP\\AppkaCSV\\appkaCSV.csproj": {}
   },
   "projects": {
-    "C:\\Škola\\VCP\\appkaCSV\\appkaCSV.csproj": {
+    "C:\\Škola\\VCP\\AppkaCSV\\appkaCSV.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Škola\\VCP\\appkaCSV\\appkaCSV.csproj",
+        "projectUniqueName": "C:\\Škola\\VCP\\AppkaCSV\\appkaCSV.csproj",
         "projectName": "appkaCSV",
-        "projectPath": "C:\\Škola\\VCP\\appkaCSV\\appkaCSV.csproj",
+        "projectPath": "C:\\Škola\\VCP\\AppkaCSV\\appkaCSV.csproj",
         "packagesPath": "C:\\Users\\libor\\.nuget\\packages\\",
-        "outputPath": "C:\\Škola\\VCP\\appkaCSV\\obj\\",
+        "outputPath": "C:\\Škola\\VCP\\AppkaCSV\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\libor\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

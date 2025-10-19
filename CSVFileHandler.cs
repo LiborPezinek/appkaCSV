@@ -8,63 +8,72 @@ class CSVFileHandler
     private readonly string _path;
     private readonly List<string> _header;
 
-    public CSVFileHandler(List<string> header, string path = "database.csv")
+    // Constructor
+    public CSVFileHandler(List<string> header, string path)
     {
         _path = path;
         _header = header;
 
-        ClearFile();
+        WriteHeader();
     }
 
-    // Clears (or creates if doesnt exist) the CSV file and writes a header
-    private void ClearFile()
+    // Clears (or creates if doesn't exist) the CSV file and writes a header
+    private void WriteHeader()
     {
-        foreach (string head in _header)
-        {
-            File.WriteAllText(_path, _header + Environment.NewLine + Environment.NewLine);
-        }
+        // Truncate the file if it exists, or create a new one
+        File.WriteAllText(_path, "");
+
+        // takes all fields and joins them into one string, divided by a semicolon (proper CSV format), writes to file
+        string line = string.Join(";", _header);
+        File.AppendAllText(_path, line + Environment.NewLine + Environment.NewLine);
     }
 
     // Adds a record to the CSV file
     public void AddRecord(List<string> record)
     {
-        if (record.Count != _header.Count)
-        {
-            throw new ArgumentException("Record does not match header length.");
-        }
+        // check for empty fields
         foreach (string field in record)
         {
-            if (string.IsNullOrWhiteSpace(field))
-            {
+            if (string.IsNullOrWhiteSpace(field)) {
                 throw new ArgumentException("Record fields cannot be empty.");
             }
         }
-        // takes all fields and joins them into one string, divided by a semicolon
+
+        // takes all fields and joins them into one string, divided by a semicolon (proper CSV format)
         string line = string.Join(";", record);
-        File.AppendAllText(_path, line);
+        File.AppendAllText(_path, line + Environment.NewLine);
     }
 
+    // Searches for a record by name in the CSV file
+    public void SearchRecord(string searchTerm)
+    {
+        string[] lines = File.ReadAllLines(_path);
+        bool found = false;
+        foreach (var line in lines)
+        {
+            if (line.Contains(searchTerm))
+            {
+                Console.WriteLine("Record found: " + line);
+                found = true;
+            }
+        }
+        if (!found)
+        {
+            Console.WriteLine("Record not found.");
+        }
+        Console.WriteLine(); // extra line for better readability
+    }
+
+    // print all records of the CSV file to the console (at least the header)
     public void PrintAllRecords()
     {
+        Console.WriteLine("\nCSV File Content:");
+
         string[] lines = File.ReadAllLines(_path);
         foreach (var line in lines)
         {
             Console.WriteLine(line);
         }
-    }
-
-    public bool SearchRecord(string name)
-    {
-        string[] lines = File.ReadAllLines(_path);
-        foreach (var line in lines)
-        {
-            if (line.StartsWith(name + ";"))
-            {
-                Console.WriteLine("Record found: " + line);
-                return true;
-            }
-        }
-        Console.WriteLine("Record not found.");
-        return false;
+        Console.WriteLine(); // extra line for better readability
     }
 }    

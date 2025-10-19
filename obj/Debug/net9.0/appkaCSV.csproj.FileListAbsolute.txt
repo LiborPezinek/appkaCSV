@@ -12,3 +12,4 @@ C:\Škola\VCP\appkaCSV\obj\Debug\net9.0\refint\appkaCSV.dll
 C:\Škola\VCP\appkaCSV\obj\Debug\net9.0\appkaCSV.pdb
 C:\Škola\VCP\appkaCSV\obj\Debug\net9.0\appkaCSV.genruntimeconfig.cache
 C:\Škola\VCP\appkaCSV\obj\Debug\net9.0\ref\appkaCSV.dll
+C:\Škola\VCP\appkaCSV\obj\Debug\net9.0\appkaCSV.sourcelink.json
